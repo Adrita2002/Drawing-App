@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+body{
+    margin:0px;
+    padding:10px 30px;
+    overflow-x:hidden;
+    background-color: #313131;
+    width:100%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width:30px;
+    height: 30px;
+    margin:0 5px;
+}
+.logo img{
+    width:100%;
+    height:100%;
+}
+h1{
+   
+    color:#ccff00;
+}
+.field{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:15px;
+    align-items:center;
+}
+.tools .color-field{
+    height:40px;
+    width:40px;
+    min-height: 40px;
+    min-width:40px;
+    cursor: pointer;
+    display:inline-block;
+    box-sizing:border-box;
+    border-radius:50%;
+    border:2px solid white;
+    margin: 0 10px;
+}   
+
+.tools .button{
+    cursor: pointer;
+    width:100px;
+    height:40px;
+    border:2px solid white;
+    color:white;
+    background-color:#222 ;
+    font-weight: bold;
+    border-radius: 10px;
+    margin:0 10px;
+}
+
+canvas{
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: pointer;
+    margin:0 80px;
+    width:95vw;
+}
+
+.color-picker{
+margin:0 10px;
+height:40px;
+width:40px;
+
+}
+
+.pen-range{
+    margin:0 10px;
+
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:800px) {
+    .tools {
+        display: flex;
+        flex-direction: column;
+        padding:20px 0;
+
+        }
+        .colors{
+            margin:20px 0;
+        }
+       .tools .button{
+           width:60px;
+           height:30px;
+       }
+       .tools .color-field{
+           height:30px;
+           width:30px;
+           min-width: 30px;
+           min-height: 30px;
+       }
+       .color-picker{
+           height:30px;
+           width:30px;
+       }
+}
